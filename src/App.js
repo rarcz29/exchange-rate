@@ -2,7 +2,6 @@ import "./App.css";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Divider from "@material-ui/core/Divider";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
@@ -12,32 +11,30 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 
-const useStyles = makeStyles((theme) => ({
-  // formControl: {
-  //   margin: theme.spacing(1),
-  //   minWidth: 120,
-  // },
-  // selectEmpty: {
-  //   marginTop: theme.spacing(2),
-  // },
-}));
+import Header from "./containers/Header";
+
+// const useStyles = makeStyles((theme) => ({
+//   // formControl: {
+//   //   margin: theme.spacing(1),
+//   //   minWidth: 120,
+//   // },
+//   // selectEmpty: {
+//   //   marginTop: theme.spacing(2),
+//   // },
+// }));
 
 function App() {
-  const classes = useStyles();
-  const [age, setAge] = React.useState("");
+  // const classes = useStyles();
+  // const [age, setAge] = React.useState("");
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   setAge(event.target.value);
+  // };
 
   return (
     <Container className="App">
-      <header>
-        <h1>Exchange Rate</h1>
-        <Divider />
-      </header>
-
-      <main>
+      <Header title="Exchange rate" />
+      {/* <main>
         <Grid container spacing={3}>
           <Grid item xs={3}>
             <TextField
@@ -83,7 +80,7 @@ function App() {
             />
           </Grid>
         </Grid>
-      </main>
+      </main> */}
     </Container>
   );
 }
