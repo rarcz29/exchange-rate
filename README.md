@@ -1,6 +1,7 @@
 # Exchange Rate
 
 Currency converter built with React.js
+Exchange rates provided by [Exchange rates API](https://exchangeratesapi.io/)
 
 # Getting Started with Create React App
 
