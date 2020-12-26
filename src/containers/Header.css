@@ -1,16 +1,14 @@
-.title {
-  margin: 2rem 0 0 3rem;
-}
-
-.current-time {
-  margin: 0 0 2rem 3.5rem;
-}
-
 .container {
+  margin: 2rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-left-side {
+.right-side {
+  text-align: end;
+}
+
+.margin-zero {
+  margin: 0;
 }
