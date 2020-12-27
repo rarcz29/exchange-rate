@@ -2,6 +2,7 @@ import Container from "@material-ui/core/Container";
 import AppBar from "./components/AppBar";
 import Clock from "./components/Clock";
 import "./App.scss";
+import ExchangeForm from "./components/ExchangeForm";
 
 function App() {
     return (
@@ -18,10 +19,7 @@ function App() {
             </AppBar>
 
             <main>
-                <section>
-                    <div></div>
-                    <div></div>
-                </section>
+                <ExchangeForm />
             </main>
         </Container>
     );
