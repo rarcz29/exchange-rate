@@ -1,0 +1,9 @@
+.exchangeForm {
+    .inputs {
+        display: flex;
+
+        section {
+            flex-direction: column;
+        }
+    }
+}

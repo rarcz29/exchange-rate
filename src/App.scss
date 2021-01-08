@@ -1,0 +1,28 @@
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-bar-left {
+    align-items: flex-start;
+
+    h1,
+    p {
+        margin: 0;
+    }
+}
+
+.app-bar-right {
+    align-items: flex-end;
+
+    h2,
+    p {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .app-bar-right {
+        display: none;
+    }
+}
