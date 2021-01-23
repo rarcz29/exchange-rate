@@ -1,0 +1,17 @@
+.page-header {
+    height: 141px;
+    background-color: var(--color-light1);
+}
+
+.page-header .app-bar-children {
+    margin-left: 48px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.page-header hr {
+    background-color: var(--color-dark);
+}
