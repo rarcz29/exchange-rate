@@ -1,7 +1,7 @@
 import React from "react";
 import "./AppBar.css";
 
-const AppBar = ({ children, contentMargin }) => {
+const AppBar = ({ children }) => {
     return (
         <header className="page-header">
             <div className="app-bar-children">{children}</div>

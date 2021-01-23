@@ -1,5 +1,6 @@
 import AppBar from "./components/AppBar";
 import Clock from "./components/Clock";
+import CurrencyInput from "./components/CurrencyInput";
 import "./App.css";
 
 function App() {
@@ -12,7 +13,12 @@ function App() {
                 </div>
             </AppBar>
 
-            <main className="container"></main>
+            <main className="container">
+                <CurrencyInput
+                    title="FROM"
+                    currencies={["asdf", "xxx", "yyy"]}
+                ></CurrencyInput>
+            </main>
         </>
     );
 }

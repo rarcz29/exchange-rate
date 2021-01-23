@@ -1,10 +1,10 @@
 .page-header {
-    height: 141px;
+    height: 8.8rem;
     background-color: var(--color-light1);
 }
 
 .page-header .app-bar-children {
-    margin-left: 48px;
+    margin-left: 3rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -14,4 +14,12 @@
 
 .page-header hr {
     background-color: var(--color-dark);
+}
+
+@media only screen and (max-width: 500px) {
+    .page-header .app-bar-children {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -1,0 +1,29 @@
+.currency-input {
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* TODO: pass as a class */
+    border-radius: 30px;
+    height: 364px;
+    width: 442px;
+}
+
+.currency-input h2 {
+    color: var(--color-light1);
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.currency-input select,
+.currency-input input {
+    height: 4.4rem;
+    width: 80%;
+    border-radius: 20px;
+    border-width: 0;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+}
