@@ -1,6 +1,7 @@
 import AppBar from "./components/AppBar";
 import Clock from "./components/Clock";
 import ExchangeForm from "./components/ExchangeForm";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -8,18 +9,16 @@ function App() {
         <>
             <AppBar>
                 <div className="topbar">
-                    <h1>Exchange Rate</h1>
+                    <h1>Exchange Rates</h1>
                     <Clock text="Current time: " />
                 </div>
             </AppBar>
 
             <main className="container">
-                {/* <CurrencyInput
-                    title="FROM"
-                    currencies={["asdf", "xxx", "yyy"]}
-                ></CurrencyInput> */}
                 <ExchangeForm />
             </main>
+
+            <Footer></Footer>
         </>
     );
 }
