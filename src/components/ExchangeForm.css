@@ -1,0 +1,26 @@
+.currency-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 3rem;
+}
+
+.data-input {
+    border-radius: 30px;
+    height: 22.75rem;
+    width: 442px;
+}
+
+@media only screen and (max-width: 1120px) {
+    .currency-form {
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .data-input {
+        width: 95%;
+    }
+}

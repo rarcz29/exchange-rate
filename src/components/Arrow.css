@@ -1,0 +1,19 @@
+.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow div {
+    background-color: white;
+}
+
+.arrow .elem1 {
+    width: 60%;
+    height: 30%;
+}
+
+.arrow .elem2 {
+    width: 40%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+}
