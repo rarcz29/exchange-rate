@@ -1,0 +1,41 @@
+.swap-bt-container {
+    padding: 20px;
+    border-radius: 100%;
+    background-color: #b1cded;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.swap-bt-container .swap-bt {
+    border-radius: inherit;
+    background-color: #3174f5;
+    width: 82px;
+    height: 82px;
+    border-width: 0;
+    transition: transform ease-in-out 1s, opacity ease 0.1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swap-bt-container .swap-bt:active {
+    opacity: 0.8;
+}
+
+.swap-bt-container .swap-bt:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.swap-bt-container .swap-bt .swap-arrow {
+    width: 60%;
+    height: 30%;
+}
+
+.swap-bt-container .swap-bt .second-arrow {
+    transform: rotate(180deg);
+}

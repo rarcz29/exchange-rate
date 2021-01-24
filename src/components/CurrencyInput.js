@@ -3,22 +3,45 @@ import "./CurrencyInput.css";
 
 const CurrencyInput = ({
     title,
-    currencies,
+    rates,
     nameCurrencyInput,
     nameAmountInput,
     className,
+    currencyCallback,
+    amountCallback,
+    currencyValue,
+    amountValue,
+    isLoading,
+    isChangeable,
 }) => {
     return (
         <div className={`${className} currency-input`}>
             <h2>{title}</h2>
 
-            <select name={nameCurrencyInput}>
-                {currencies.map((c) => (
-                    <option value={c}>{c}</option>
-                ))}
+            <select
+                value={currencyValue}
+                onChange={(event) => {
+                    currencyCallback(event.target.value);
+                }}
+                name={nameCurrencyInput}
+            >
+                {isLoading ? (
+                    <option value=""></option>
+                ) : (
+                    Object.keys(rates).map((e) => (
+                        <option value={e}>{e}</option>
+                    ))
+                )}
             </select>
 
-            <input type="number" name={nameAmountInput} />
+            <input
+                value={amountValue}
+                onChange={(event) => amountCallback(event.target.value)}
+                type="number"
+                name={nameAmountInput}
+                placeholder={!isChangeable ? "0" : "Amount"}
+                disabled={!isChangeable}
+            />
         </div>
     );
 };
